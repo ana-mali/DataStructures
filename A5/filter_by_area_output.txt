@@ -1,0 +1,28 @@
+Cities with area >= 200.00
+Toronto = 630.20
+Mississauga = 292.43
+Brampton = 266.36
+Hamilton = 1117.29
+London = 420.35
+Markham = 212.35
+
+Cities with area >= 300.00
+Toronto = 630.20
+Hamilton = 1117.29
+London = 420.35
+
+Cities with area >= 800.00
+Hamilton = 1117.29
+
+Cities with area >= 300.00
+Montreal = 431.50
+Quebec = 485.77
+Gatineau = 381.30
+Sherbrooke = 367.10
+Saguenay = 1279.70
+Levis = 497.00
+Trois-Rivieres = 333.70
+
+Cities with area >= 1300.00
+
+Error(filter_by_area): Could not open file BC.txt

@@ -1,0 +1,177 @@
+------------------------------
+Start testing: get_file_stats:
+
+Analyzing file cIntro.txt:
+#Paragraphs = 5
+#lines = 9
+#words = 38
+#characters = 234
+	#uppers = 5
+	#lowers = 222
+	#others = 7
+#spaces = 42
+
+Analyzing file chistory.txt:
+#Paragraphs = 3
+#lines = 18
+#words = 150
+#characters = 895
+	#uppers = 31
+	#lowers = 829
+	#others = 35
+#spaces = 152
+
+Error(get_file_stats): Could not open file nothing.txt
+
+End Testing: get_file_stats
+------------------------------
+
+------------------------------
+Start testing: format_file1:
+
+Case 1: formatting cIntro.txt:
+
+C is an imperative procedural language.
+It was designed to be compiled using a relatively straightforward compiler.
+It provides low-level access to memory.
+It provides language constructs that map efficiently to machine instructions.
+It requires minimal run-time support.
+
+----
+Case 2: formatting chistory.txt:
+
+C is a general-purpose, imperative computer programming language, supporting structured programming, lexical variable scope and recursion, while a static type system prevents many unintended operations.
+By design, C provides constructs that map efficiently to typical machine instructions, and therefore it has found lasting use in applications that had formerly been coded in assembly language, including operating systems, as well as various application software for computers ranging from supercomputers to embedded systems.
+C was originally developed by Dennis Ritchie between 1969 and 1973 at Bell Labs, and used to re-implement the Unix operating system.
+It has since become one of the most widely used programming languages of all time, with C compilers from various vendors available for the majority of existing computer architectures and operating systems.
+C has been standardized by the American National Standards Institute (ANSI) since 1989 (see ANSI C) and subsequently by the International Organization for Standardization (ISO).
+
+----
+Case 3: formatting nothing.txt:
+
+Error(format_file1): Could not open file nothing.txt
+
+----
+
+End Testing: format_file1
+------------------------------
+
+------------------------------
+Start testing: format_file2:
+
+Case 1: formatting cIntro.txt:
+
+1 C is an imperative procedural language
+2 
+3 It was designed to be compiled using a relatively straightforward compiler
+4 
+5 It provides lowlevel access to memory
+6 
+7 It provides language constructs that map efficiently to machine instructions
+8 
+9 It requires minimal runtime support
+
+----
+Case 2: formatting chistory.txt:
+
+1 C is a generalpurpose imperative computer programming language
+2 supporting structured programming lexical variable scope and recursion
+3 while a static type system prevents many unintended operations
+4 
+5 By design C provides constructs that map efficiently to typical
+6 machine instructions and therefore it has found lasting use in applications
+7 that had formerly been coded in assembly language
+8 including operating systems as well as various application software
+9 for computers ranging from supercomputers to embedded systems
+10 
+11 C was originally developed by Dennis Ritchie between [1969] and [1973] at Bell Labs
+12 and used to reimplement the Unix operating system
+13 It has since become one of the most widely used programming languages of all time
+14 with C compilers from various vendors available for the majority of existing
+15 computer architectures and operating systems
+16 C has been standardized by the American National Standards Institute ANSI
+17 since [1989] see ANSI C and subsequently by
+18 the International Organization for Standardization ISO
+
+----
+Case 3: formatting nothing.txt:
+
+Error(format_file2): Could not open file nothing.txt
+
+----
+
+End Testing: format_file2
+------------------------------
+
+------------------------------
+Start testing: filter_by_area:
+
+Cities with area >= 200.00:
+Toronto = 630
+Mississauga = 292
+Brampton = 266
+Hamilton = 1117
+London = 420
+Markham = 212
+
+Cities with area >= 300.00:
+Toronto = 630
+Hamilton = 1117
+London = 420
+
+Cities with area >= 800.00:
+Hamilton = 1117
+
+Cities with area >= 300.00:
+Montreal = 432
+Gatineau = 381
+Sherbrooke = 367
+Saguenay = 1280
+Levis = 497
+Trois-Rivieres = 334
+
+Cities with area >= 1300.00:
+No cities were found
+
+Error(filter_by_area): Could not open file BC.txt
+
+End Testing: filter_by_area
+------------------------------
+
+------------------------------
+Start testing: replace_two_chars:
+
+Replacing "to" with "**" in file cIntro2.txt
+C is an imperative procedural language.
+
+It was designed ** be compiled using a relatively straightforward compiler.
+
+It provides low-level access ** memory.
+
+It provides language constructs that map efficiently ** machine instructions.
+
+It requires minimal run-time support.
+
+Replacing "in" with "IN" in file chistory2.txt
+C is a general-purpose, imperative computer programmINg language,
+supportINg structured programmINg, lexical variable scope and recursion,
+while a static type system prevents many unINtended operations.
+
+By design, C provides constructs that map efficiently to typical
+machINe INstructions, and therefore it has found lastINg use IN applications
+that had formerly been coded IN assembly language,
+INcludINg operatINg systems, as well as various application software
+for computers rangINg from supercomputers to embedded systems.
+
+C was origINally developed by Dennis Ritchie between 1969 and 1973 at Bell Labs,
+and used to re-implement the Unix operatINg system.
+It has sINce become one of the most widely used programmINg languages of all time,
+with C compilers from various vendors available for the majority of existINg
+computer architectures and operatINg systems.
+C has been standardized by the American National Standards Institute (ANSI)
+sINce 1989 (see ANSI C) and subsequently by
+the International Organization for Standardization (ISO).
+
+End Testing: replace_two_chars
+------------------------------
+

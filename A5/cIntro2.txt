@@ -1,0 +1,9 @@
+C is an imperative procedural language.
+
+It was designed ** be compiled using a relatively straightforward compiler.
+
+It provides low-level access ** memory.
+
+It provides language constructs that map efficiently ** machine instructions.
+
+It requires minimal run-time support.

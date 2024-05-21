@@ -1,0 +1,8 @@
+Population of Toronto is 2731571 and the area is 630.20
+Population of Ottawa is 934243 and the area is 2,790.30
+Population of Mississauga is 721699 and the area is 292.43
+Population of Brampton is 593638 and the area is 266.36
+Population of Hamilton is 536917 and the area is 1117.29
+Population of London is 383822 and the area is 420.35
+Population of Markham is 328966 and the area is 212.35
+Population of Barrie is 141434 and the area is 99.04

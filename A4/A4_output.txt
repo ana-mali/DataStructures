@@ -1,0 +1,215 @@
+--------------Testing update_array --------------
+
+Case 1: size = 6, multiplier = 2
+Array Before update:
+[ 10 , 20 , 30 , 40 , 50 , 60 ]
+Array after update:
+[ 10 , 10 , 20 , 20 , 30 , 30 , 40 , 40 , 50 , 50 , 60 , 60 ]
+
+Case 2: size = 4, multiplier = 3
+Array Before update:
+[ 10 , 20 , 30 , 40 ]
+Array after update:
+[ 10 , 10 , 10 , 20 , 20 , 20 , 30 , 30 , 30 , 40 , 40 , 40 ]
+
+Case 3: size = 10, multiplier = 1
+Array Before update:
+[ 10 , 20 , 30 , 40 , 50 , 60 , 70 , 80 , 90 , 100 ]
+Array after update:
+[ 10 , 20 , 30 , 40 , 50 , 60 , 70 , 80 , 90 , 100 ]
+
+Case 4: size = 5, multiplier = 0
+Array Before update:
+[ 10 , 20 , 30 , 40 , 50 ]
+Error (update_array): invalid multiplier
+Array after update:
+[ 10 , 20 , 30 , 40 , 50 ]
+
+--------------End of Testing update_array --------------
+
+------------------------------
+Start: Testing format_cities:
+
+Case 1:
+Cities before format: 
+	chicago
+	new york
+	las vegas
+Cities after format: 
+	Chicago
+	NewYork
+	LasVegas
+
+Case 2:
+Cities before format: 
+	waterloo
+	north bay
+	
+	thunder bay
+	Sarnia
+Cities after format: 
+	Waterloo
+	NorthBay
+	
+	ThunderBay
+	Sarnia
+
+Case 3:
+Error(format_cities): array is NULL
+Error(format_cities): invalid size
+
+End: Testing format_cities
+------------------------------
+
+------------------------------
+Start: Testing format_str:
+
+Case 0: Empty String:
+Before:
+	inStr = 
+	outStr = 
+Inside format_str function:
+	String Length = 0
+	After middle caps = 
+	After split =  
+	After First half reverse =  
+	After Second half reverse =  
+After:
+	inStr = 
+	outStr =  
+
+Case 1: One Character:
+Before:
+	inStr = a
+	outStr = 
+Inside format_str function:
+	String Length = 1
+	After middle caps = a
+	After split =  a
+	After First half reverse =  a
+	After Second half reverse =  a
+After:
+	inStr = a
+	outStr =  a
+
+Case 2: Two Characters:
+Before:
+	inStr = ab
+	outStr = 
+Inside format_str function:
+	String Length = 2
+	After middle caps = ab
+	After split = a b
+	After First half reverse = a b
+	After Second half reverse = a b
+After:
+	inStr = ab
+	outStr = a b
+
+Case 3: Three Characters:
+Before:
+	inStr = abc
+	outStr = 
+Inside format_str function:
+	String Length = 3
+	After middle caps = aBc
+	After split = a Bc
+	After First half reverse = a Bc
+	After Second half reverse = a cB
+After:
+	inStr = abc
+	outStr = a cB
+
+Case 4: Four Characters:
+Before:
+	inStr = abcd
+	outStr = 
+Inside format_str function:
+	String Length = 4
+	After middle caps = aBCd
+	After split = aB Cd
+	After First half reverse = Ba Cd
+	After Second half reverse = Ba dC
+After:
+	inStr = abcd
+	outStr = Ba dC
+
+Case 5: Seven Characters:
+Before:
+	inStr = abcdefg
+	outStr = 
+Inside format_str function:
+	String Length = 7
+	After middle caps = aBCDEFg
+	After split = aBC DEFg
+	After First half reverse = CBa DEFg
+	After Second half reverse = CBa gFED
+After:
+	inStr = abcdefg
+	outStr = CBa gFED
+
+Case 6: 19 Characters: 
+Before:
+	inStr = ABCDEFGHIJKLMNOPQRS
+	outStr = 
+Inside format_str function:
+	String Length = 19
+	After middle caps = aBCDEFGHIJKLMNOPQRs
+	After split = aBCDEFGHI JKLMNOPQRs
+	After First half reverse = IHGFEDCBa JKLMNOPQRs
+	After Second half reverse = IHGFEDCBa sRQPONMLKJ
+After:
+	inStr = ABCDEFGHIJKLMNOPQRS
+	outStr = IHGFEDCBa sRQPONMLKJ
+
+End: Testing format_str
+------------------------------
+
+------------------------------
+Start: Testing get_multiples_array1:
+
+ 11  22  33  44  55  66  77  88  99 110
+ 14  28  42  56  70  84  98 112 126 140
+250 500 750   0   0   0   0   0   0   0
+
+  3   6   9  12  15  18  21  24  27  30
+ 14  28  42  56  70  84  98 112 126 140
+ 25  50  75 100 125 150 175 200 225 250
+ 36  72 108 144 180 216 252 288 324 360
+ 47  94 141 188 235 282 329 376 423 470
+
+299 598 897   0   0   0   0   0   0   0
+
+Error(get_multiples_array1): invalid array
+Error(print_multiples1): invalid array
+
+Error(get_multiples_array1): invalid size
+Error(print_multiples1): invalid size
+
+End: Testing get_multiples_array1
+------------------------------
+
+------------------------------
+Start: Testing get_multiples_array2:
+
+ 11  22  33  44  55  66  77  88  99 110
+ 14  28  42  56  70  84  98 112 126 140
+250 500 750   0   0   0   0   0   0   0
+
+  3   6   9  12  15  18  21  24  27  30
+ 14  28  42  56  70  84  98 112 126 140
+ 25  50  75 100 125 150 175 200 225 250
+ 36  72 108 144 180 216 252 288 324 360
+ 47  94 141 188 235 282 329 376 423 470
+
+299 598 897   0   0   0   0   0   0   0
+
+Error(get_multiples_array2): invalid array
+Error(print_multiples2): invalid array
+
+Error(get_multiples_array2): invalid size
+Error(print_multiples2): invalid array
+
+End: Testing get_multiples_array2
+------------------------------
+

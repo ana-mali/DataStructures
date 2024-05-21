@@ -1,0 +1,402 @@
+------------------------------
+Start: Testing remove_largest:
+
+Printing Processes Before Any Remove:
+[5](111111,20)
+[7](222222,10)
+[7](333333,60)
+[8](444444,20)
+[9](555555,30)
+[9](666666,30)
+
+Case 0: NULL pointer:
+Error(remove_largest): given pointer is NULL
+
+Case 1: Invalid Size:
+Error(remove_largest): invalid array size
+
+Case 2: First Remove (Simple):
+Largest Process is : 333333
+[5](111111,20)
+[7](222222,10)
+[9](666666,30)
+[8](444444,20)
+[9](555555,30)
+
+Case 3: Second Remove (Last Element, same time and arrival):
+Largest Process is : 555555
+[5](111111,20)
+[7](222222,10)
+[9](666666,30)
+[8](444444,20)
+
+Case 4: Third Remove (Second Last Element):
+Largest Process is : 666666
+[5](111111,20)
+[7](222222,10)
+[8](444444,20)
+
+Case 5: Fourth Remove (first element, same time):
+Largest Process is : 111111
+[8](444444,20)
+[7](222222,10)
+
+Case 6: Fifth Remove:
+Largest Process is : 444444
+[7](222222,10)
+
+Case 7: Last Remove:
+Largest Process is : 222222
+[0](0,0)
+
+End of Testing remove_largest
+------------------------------
+
+------------------------------
+Start: Testing reverse_stack:
+
+Reversing an empty Stack:
+Stack before reverse:
+Stack Size = 0
+<emtpy_stack>
+Stack after reverse:
+Stack Size = 0
+<emtpy_stack>
+
+Reversing a stack of 10 processes:
+Printing Stack before reverse:
+Stack Size = 10
+[10](1000010009,19)
+[9](1000010008,18)
+[8](1000010007,17)
+[7](1000010006,16)
+[6](1000010005,15)
+[5](1000010004,14)
+[4](1000010003,13)
+[3](1000010002,12)
+[2](1000010001,11)
+[1](1000010000,10)
+Stack after reverse:
+Stack Size = 10
+[1](1000010000,10)
+[2](1000010001,11)
+[3](1000010002,12)
+[4](1000010003,13)
+[5](1000010004,14)
+[6](1000010005,15)
+[7](1000010006,16)
+[8](1000010007,17)
+[9](1000010008,18)
+[10](1000010009,19)
+
+End of Testing reverse_stack
+------------------------------
+
+------------------------------
+Start: Testing slice_stack
+
+
+----------- Case 0 -----------
+
+Before slice: s1 =
+Stack Size = 0
+<emtpy_stack>
+
+Calling slice_stack(s1,2):
+Error(slice_stack): cannot slice an empty stack
+
+After slice: s1 =
+Stack Size = 0
+<emtpy_stack>
+
+After slice: s2 =
+Stack Size = 0
+<emtpy_stack>
+
+----------- Case 1 -----------
+
+Before slice: s1 =
+Stack Size = 10
+[1000000](10,100)
+[900000](9,90)
+[800000](8,80)
+[700000](7,70)
+[600000](6,60)
+[500000](5,50)
+[400000](4,40)
+[300000](3,30)
+[200000](2,20)
+[100000](1,10)
+
+Calling slice_stack(s1,-1):
+Error(slice_stack): invalid index
+
+After slice: s1 =
+Stack Size = 10
+[1000000](10,100)
+[900000](9,90)
+[800000](8,80)
+[700000](7,70)
+[600000](6,60)
+[500000](5,50)
+[400000](4,40)
+[300000](3,30)
+[200000](2,20)
+[100000](1,10)
+
+After slice: s2 =
+Stack Size = 0
+<emtpy_stack>
+
+----------- Case 2 -----------
+
+Before slice: s1 =
+Stack Size = 10
+[1000000](10,100)
+[900000](9,90)
+[800000](8,80)
+[700000](7,70)
+[600000](6,60)
+[500000](5,50)
+[400000](4,40)
+[300000](3,30)
+[200000](2,20)
+[100000](1,10)
+
+Calling slice_stack(s1,9):
+
+After slice: s1 =
+Stack Size = 9
+[900000](9,90)
+[800000](8,80)
+[700000](7,70)
+[600000](6,60)
+[500000](5,50)
+[400000](4,40)
+[300000](3,30)
+[200000](2,20)
+[100000](1,10)
+
+After slice: s2 =
+Stack Size = 1
+[1000000](10,100)
+
+----------- Case 3 -----------
+
+Before slice: s1 =
+Stack Size = 9
+[900000](9,90)
+[800000](8,80)
+[700000](7,70)
+[600000](6,60)
+[500000](5,50)
+[400000](4,40)
+[300000](3,30)
+[200000](2,20)
+[100000](1,10)
+
+Calling slice_stack(s1,5):
+
+After slice: s1 =
+Stack Size = 5
+[500000](5,50)
+[400000](4,40)
+[300000](3,30)
+[200000](2,20)
+[100000](1,10)
+
+After slice: s2 =
+Stack Size = 4
+[900000](9,90)
+[800000](8,80)
+[700000](7,70)
+[600000](6,60)
+
+----------- Case 4 -----------
+
+Before slice: s1 =
+Stack Size = 5
+[500000](5,50)
+[400000](4,40)
+[300000](3,30)
+[200000](2,20)
+[100000](1,10)
+
+Calling slice_stack(s1,0):
+
+After slice: s1 =
+Stack Size = 0
+<emtpy_stack>
+
+After slice: s2 =
+Stack Size = 5
+[500000](5,50)
+[400000](4,40)
+[300000](3,30)
+[200000](2,20)
+[100000](1,10)
+
+----------- Case 5 -----------
+
+Before slice: s1 =
+Stack Size = 10
+[1000000](10,100)
+[900000](9,90)
+[800000](8,80)
+[700000](7,70)
+[600000](6,60)
+[500000](5,50)
+[400000](4,40)
+[300000](3,30)
+[200000](2,20)
+[100000](1,10)
+
+Calling slice_stack(s1,15):
+
+After slice: s1 =
+Stack Size = 0
+<emtpy_stack>
+
+After slice: s2 =
+Stack Size = 10
+[1000000](10,100)
+[900000](9,90)
+[800000](8,80)
+[700000](7,70)
+[600000](6,60)
+[500000](5,50)
+[400000](4,40)
+[300000](3,30)
+[200000](2,20)
+[100000](1,10)
+
+End: Testing slice_stack
+------------------------------
+
+------------------------------
+Start: Testing resize_stack:
+
+Creating a stack with 10 elements
+Capacity = 10, Stack Size = 10
+[10](1000010009,19)
+[9](1000010008,18)
+[8](1000010007,17)
+[7](1000010006,16)
+[6](1000010005,15)
+[5](1000010004,14)
+[4](1000010003,13)
+[3](1000010002,12)
+[2](1000010001,11)
+[1](1000010000,10)
+
+Resize to 5:
+Capacity = 5, Stack Size = 5
+[5](1000010004,14)
+[4](1000010003,13)
+[3](1000010002,12)
+[2](1000010001,11)
+[1](1000010000,10)
+
+Resize to 9:
+Capacity = 9, Stack Size = 5
+[5](1000010004,14)
+[4](1000010003,13)
+[3](1000010002,12)
+[2](1000010001,11)
+[1](1000010000,10)
+
+Resize to 6:
+Capacity = 6, Stack Size = 5
+[5](1000010004,14)
+[4](1000010003,13)
+[3](1000010002,12)
+[2](1000010001,11)
+[1](1000010000,10)
+
+Resize to 3:
+Capacity = 3, Stack Size = 3
+[3](1000010002,12)
+[2](1000010001,11)
+[1](1000010000,10)
+
+Resize to 0:
+Error(resize_stack): invalid capacity size.
+Capacity = 3, Stack Size = 3
+[3](1000010002,12)
+[2](1000010001,11)
+[1](1000010000,10)
+
+Destroy stack
+------------------------------
+End of Testing resize_stack
+
+------------------------------
+Start: Testing concat_stack:
+
+Case 0: Two Empty Stacks:
+Stacks Before Concatenation:
+Stack 1: Capacity = 3, Stack Size = 0
+<emtpy_stack>
+Stack 2: Capacity = 2, Stack Size = 0
+<emtpy_stack>
+
+Stacks After Concatenation:
+Stack 3: Capacity = 5, Stack Size = 0
+<emtpy_stack>
+Stack 1: Capacity = 3, Stack Size = 0
+<emtpy_stack>
+Stack 2: Capacity = 2, Stack Size = 0
+<emtpy_stack>
+
+Case 1: Non-empty to empty stack:
+Stacks Before Concatenation:
+Stack 1: Capacity = 3, Stack Size = 0
+<emtpy_stack>
+Stack 2: Capacity = 2, Stack Size = 2
+[2](1000010001,11)
+[1](1000010000,10)
+
+Stacks After Concatenation:
+Stack 4: Capacity = 5, Stack Size = 2
+[2](1000010001,11)
+[1](1000010000,10)
+Stack 1: Capacity = 3, Stack Size = 0
+<emtpy_stack>
+Stack 2: Capacity = 2, Stack Size = 2
+[2](1000010001,11)
+[1](1000010000,10)
+
+Case 2: Two non-empty stacks:
+Stacks Before Concatenation:
+Stack 1: Capacity = 3, Stack Size = 3
+[5](1000010004,14)
+[4](1000010003,13)
+[3](1000010002,12)
+Stack 2: Capacity = 2, Stack Size = 2
+[2](1000010001,11)
+[1](1000010000,10)
+
+Stacks After Concatenation:
+Stack 5: Capacity = 5, Stack Size = 5
+[2](1000010001,11)
+[1](1000010000,10)
+[5](1000010004,14)
+[4](1000010003,13)
+[3](1000010002,12)
+Stack 1: Capacity = 3, Stack Size = 3
+[5](1000010004,14)
+[4](1000010003,13)
+[3](1000010002,12)
+Stack 2: Capacity = 2, Stack Size = 2
+[2](1000010001,11)
+[1](1000010000,10)
+
+Destroy stack 1
+Destroy stack 2
+Destroy stack 3
+Destroy stack 4
+Destroy stack 5
+
+------------------------------
+End of Testing concat_stack
+

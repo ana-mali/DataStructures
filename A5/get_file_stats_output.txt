@@ -1,0 +1,19 @@
+#Paragraphs = 4
+#lines = 9
+#words = 42
+#characters = 276
+	#lowers = 222
+	#uppers = 5
+	#others = 234
+#spaces = 42
+
+#Paragraphs = 2
+#lines = 18
+#words = 152
+#characters = 1047
+	#lowers = 829
+	#uppers = 31
+	#others = 895
+#spaces = 152
+
+Error(get_file_stats): Could not open file nothing.txt

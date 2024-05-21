@@ -1,0 +1,18 @@
+C is a general-purpose, imperative computer programmINg language,
+supportINg structured programmINg, lexical variable scope and recursion,
+while a static type system prevents many unINtended operations.
+
+By design, C provides constructs that map efficiently to typical
+machINe INstructions, and therefore it has found lastINg use IN applications
+that had formerly been coded IN assembly language,
+INcludINg operatINg systems, as well as various application software
+for computers rangINg from supercomputers to embedded systems.
+
+C was origINally developed by Dennis Ritchie between 1969 and 1973 at Bell Labs,
+and used to re-implement the Unix operatINg system.
+It has sINce become one of the most widely used programmINg languages of all time,
+with C compilers from various vendors available for the majority of existINg
+computer architectures and operatINg systems.
+C has been standardized by the American National Standards Institute (ANSI)
+sINce 1989 (see ANSI C) and subsequently by
+the International Organization for Standardization (ISO).
