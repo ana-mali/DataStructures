@@ -1,0 +1,468 @@
+------------------------------
+Start: Testing Vertex Struct:
+
+Creating Vertices:
+(0,Toronto)
+(1,Ottawa)
+(2,Waterloo)
+(3,V3)
+
+Testing is_equal_vertex:
+(0,Toronto)(1,Ottawa) Equal? 0
+(2,Waterloo)(2,Waterloo) Equal? 1
+(2,Waterloo)(2,Toronto) Equal? 0
+(2,Toronto)(0,Toronto)Equal? 1
+
+destroy all vertices:
+vertices were successfully destroyed
+
+End: Testing Vertex Struct
+------------------------------
+
+------------------------------
+Start: Testing Edge Struct:
+
+------------ start of test_edge() -------------
+List of Vertices:
+(0,Toronto) (1,Ottawa) (2,Waterloo) (3,London) 
+
+Create edge between London and Waterloo:
+[(2,Waterloo)------(3,London)]
+
+Create edge between Toronto and Waterloo:
+[(0,Toronto)------(3,London)]
+
+Create edge between Ottawa and Toronto:
+[(1,Ottawa)------(0,Toronto)]
+
+Create edge betwee Ottawa and London:
+[(1,Ottawa)------(3,London)]
+
+Testing Equality:
+[(1,Ottawa)------(0,Toronto)][(2,Waterloo)------(3,London)] Equal? 0
+[(1,Ottawa)------(0,Toronto)][(1,Ottawa)------(0,Toronto)] Equal? 1
+
+destroy edges:
+All edges successfully destroyed
+destroy vertices:
+All vertices successfully destroyed
+
+End: Testing Edge Struct
+------------------------------
+
+------------------------------
+Start: Testing Graph Basic Functions:
+
+Graph* g = create_graph();
+graph created successfully
+
+Invoke print_graph(g)
+(Adjacency Matrix Representation): #Vertices = 0, #Edges = 0
+<null graph>
+
+is_null? = 1
+is_empty? = 1
+
+vertex count = 0
+edge count = 0
+
+graph destroyed successfully
+
+End: Testing Graph Basic functions
+------------------------------
+
+------------------------------
+Start: Testing Graph with vertices:
+
+Creating an empty graph
+(Adjacency Matrix Representation): #Vertices = 0, #Edges = 0
+<null graph>
+
+Adding Vertex:(0,V0)
+add_vertex_graph successful? = 1
+(Adjacency Matrix Representation): #Vertices = 1, #Edges = 0
+Vertices: (0,V0)
+    -
+
+Adding Vertex:(1,V1)
+add_vertex_graph successful? = 1
+(Adjacency Matrix Representation): #Vertices = 2, #Edges = 0
+Vertices: (0,V0) , (1,V1)
+    -     - 
+    -     - 
+
+Adding Vertex:(2,V2)
+add_vertex_graph successful? = 1
+(Adjacency Matrix Representation): #Vertices = 3, #Edges = 0
+Vertices: (0,V0) , (1,V1) , (2,V2)
+    -     -     - 
+    -     -     - 
+    -     -     - 
+
+Adding Vertex:(3,V3)
+add_vertex_graph successful? = 1
+(Adjacency Matrix Representation): #Vertices = 4, #Edges = 0
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3)
+    -     -     -     - 
+    -     -     -     - 
+    -     -     -     - 
+    -     -     -     - 
+
+Adding Vertex:(4,V4)
+add_vertex_graph successful? = 1
+(Adjacency Matrix Representation): #Vertices = 5, #Edges = 0
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+    -     -     -     -     - 
+    -     -     -     -     - 
+    -     -     -     -     - 
+    -     -     -     -     - 
+    -     -     -     -     - 
+
+Adding Vertex:(5,V5)
+add_vertex_graph successful? = 1
+(Adjacency Matrix Representation): #Vertices = 6, #Edges = 0
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5)
+    -     -     -     -     -     - 
+    -     -     -     -     -     - 
+    -     -     -     -     -     - 
+    -     -     -     -     -     - 
+    -     -     -     -     -     - 
+    -     -     -     -     -     - 
+
+Adding Vertex:(6,V6)
+add_vertex_graph successful? = 1
+(Adjacency Matrix Representation): #Vertices = 7, #Edges = 0
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6)
+    -     -     -     -     -     -     - 
+    -     -     -     -     -     -     - 
+    -     -     -     -     -     -     - 
+    -     -     -     -     -     -     - 
+    -     -     -     -     -     -     - 
+    -     -     -     -     -     -     - 
+    -     -     -     -     -     -     - 
+
+Adding Vertex:(7,V7)
+add_vertex_graph successful? = 1
+(Adjacency Matrix Representation): #Vertices = 8, #Edges = 0
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7)
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+
+Adding Vertex:(8,V8)
+add_vertex_graph successful? = 1
+(Adjacency Matrix Representation): #Vertices = 9, #Edges = 0
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7) , (8,V8)
+    -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     - 
+
+Adding Vertex:(9,V9)
+add_vertex_graph successful? = 1
+(Adjacency Matrix Representation): #Vertices = 10, #Edges = 0
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7) , (8,V8) , (9,V9)
+    -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     - 
+
+Adding Vertex:(10,V10)
+add_vertex_graph successful? = 1
+(Adjacency Matrix Representation): #Vertices = 11, #Edges = 0
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7) , (8,V8) , (9,V9)
+(10,V10)
+    -     -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     -     - 
+
+Adding a duplicate Vertex:(10,V10)
+Error(add_vertex_graph): Vertex already exist
+add_vertex_graph successful? = 0
+(Adjacency Matrix Representation): #Vertices = 11, #Edges = 0
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7) , (8,V8) , (9,V9)
+(10,V10)
+    -     -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     -     -     -     - 
+
+Graph destroyed successfully
+
+End: Testing Graph with vertices
+------------------------------
+
+------------------------------
+Start: Testing Graph with Edges:
+
+Creating a graph with 8 vertices
+(Adjacency Matrix Representation): #Vertices = 8, #Edges = 0
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7)
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+
+Adding an edge between V0 and V1
+(Adjacency Matrix Representation): #Vertices = 8, #Edges = 1
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7)
+    -     1     -     -     -     -     -     - 
+    1     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+
+is_null? = 0
+is_empty? = 0
+
+Adding an edge between V4 and V5
+(Adjacency Matrix Representation): #Vertices = 8, #Edges = 2
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7)
+    -     1     -     -     -     -     -     - 
+    1     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     1     -     - 
+    -     -     -     -     1     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+
+Adding an edge between V1 and V4
+(Adjacency Matrix Representation): #Vertices = 8, #Edges = 3
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7)
+    -     1     -     -     -     -     -     - 
+    1     -     -     -     1     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     1     -     -     -     1     -     - 
+    -     -     -     -     1     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+
+Adding an edge between V0 and V4
+(Adjacency Matrix Representation): #Vertices = 8, #Edges = 4
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7)
+    -     1     -     -     1     -     -     - 
+    1     -     -     -     1     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    1     1     -     -     -     1     -     - 
+    -     -     -     -     1     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+
+Adding an edge between V1 and V5
+(Adjacency Matrix Representation): #Vertices = 8, #Edges = 5
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7)
+    -     1     -     -     1     -     -     - 
+    1     -     -     -     1     1     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    1     1     -     -     -     1     -     - 
+    -     1     -     -     1     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+
+Adding an edge between V3 and V4
+(Adjacency Matrix Representation): #Vertices = 8, #Edges = 6
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7)
+    -     1     -     -     1     -     -     - 
+    1     -     -     -     1     1     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     1     -     -     - 
+    1     1     -     1     -     1     -     - 
+    -     1     -     -     1     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+
+Adding an edge between V2 and V6
+(Adjacency Matrix Representation): #Vertices = 8, #Edges = 7
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7)
+    -     1     -     -     1     -     -     - 
+    1     -     -     -     1     1     -     - 
+    -     -     -     -     -     -     1     - 
+    -     -     -     -     1     -     -     - 
+    1     1     -     1     -     1     -     - 
+    -     1     -     -     1     -     -     - 
+    -     -     1     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+
+Adding an edge between V2 and V6 (a duplicate)
+Error(add_edge_graph): edge already exist
+(Adjacency Matrix Representation): #Vertices = 8, #Edges = 7
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7)
+    -     1     -     -     1     -     -     - 
+    1     -     -     -     1     1     -     - 
+    -     -     -     -     -     -     1     - 
+    -     -     -     -     1     -     -     - 
+    1     1     -     1     -     1     -     - 
+    -     1     -     -     1     -     -     - 
+    -     -     1     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+
+Adding an edge between V6 and V2 (reverse order of vertices)
+Error(add_edge_graph): edge already exist
+(Adjacency Matrix Representation): #Vertices = 8, #Edges = 7
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7)
+    -     1     -     -     1     -     -     - 
+    1     -     -     -     1     1     -     - 
+    -     -     -     -     -     -     1     - 
+    -     -     -     -     1     -     -     - 
+    1     1     -     1     -     1     -     - 
+    -     1     -     -     1     -     -     - 
+    -     -     1     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+
+Adding an edge between V3 and V6 (a directed edge)
+(Adjacency Matrix Representation): #Vertices = 8, #Edges = 8
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7)
+    -     1     -     -     1     -     -     - 
+    1     -     -     -     1     1     -     - 
+    -     -     -     -     -     -     1     - 
+    -     -     -     -     1     -     1     - 
+    1     1     -     1     -     1     -     - 
+    -     1     -     -     1     -     -     - 
+    -     -     1     1     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+
+Adding an edge between V3 and V6 (a non-weighted edge)
+Error(add_edge_graph): edge already exist
+(Adjacency Matrix Representation): #Vertices = 8, #Edges = 8
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7)
+    -     1     -     -     1     -     -     - 
+    1     -     -     -     1     1     -     - 
+    -     -     -     -     -     -     1     - 
+    -     -     -     -     1     -     1     - 
+    1     1     -     1     -     1     -     - 
+    -     1     -     -     1     -     -     - 
+    -     -     1     1     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+
+Adding four more edges
+(Adjacency Matrix Representation): #Vertices = 8, #Edges = 12
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7)
+    -     1     -     -     1     -     -     1 
+    1     -     -     -     1     1     -     - 
+    -     -     -     -     -     -     1     1 
+    -     -     -     -     1     -     1     - 
+    1     1     -     1     -     1     1     - 
+    -     1     -     -     1     -     -     - 
+    -     -     1     1     1     -     -     1 
+    1     -     1     -     -     -     1     - 
+
+Removing edge between V4 and V6
+(Adjacency Matrix Representation): #Vertices = 8, #Edges = 11
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7)
+    -     1     -     -     1     -     -     1 
+    1     -     -     -     1     1     -     - 
+    -     -     -     -     -     -     1     1 
+    -     -     -     -     1     -     1     - 
+    1     1     -     1     -     1     -     - 
+    -     1     -     -     1     -     -     - 
+    -     -     1     1     -     -     -     1 
+    1     -     1     -     -     -     1     - 
+
+Removing edge between V4 and V6 (again)
+Error(remove_edge_graph): Edge does not exist
+(Adjacency Matrix Representation): #Vertices = 8, #Edges = 11
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7)
+    -     1     -     -     1     -     -     1 
+    1     -     -     -     1     1     -     - 
+    -     -     -     -     -     -     1     1 
+    -     -     -     -     1     -     1     - 
+    1     1     -     1     -     1     -     - 
+    -     1     -     -     1     -     -     - 
+    -     -     1     1     -     -     -     1 
+    1     -     1     -     -     -     1     - 
+
+Removing a middle edge (V2-V6)
+(Adjacency Matrix Representation): #Vertices = 8, #Edges = 10
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7)
+    -     1     -     -     1     -     -     1 
+    1     -     -     -     1     1     -     - 
+    -     -     -     -     -     -     -     1 
+    -     -     -     -     1     -     1     - 
+    1     1     -     1     -     1     -     - 
+    -     1     -     -     1     -     -     - 
+    -     -     -     1     -     -     -     1 
+    1     -     1     -     -     -     1     - 
+
+Removing first edge (V0-V1)
+(Adjacency Matrix Representation): #Vertices = 8, #Edges = 9
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7)
+    -     -     -     -     1     -     -     1 
+    -     -     -     -     1     1     -     - 
+    -     -     -     -     -     -     -     1 
+    -     -     -     -     1     -     1     - 
+    1     1     -     1     -     1     -     - 
+    -     1     -     -     1     -     -     - 
+    -     -     -     1     -     -     -     1 
+    1     -     1     -     -     -     1     - 
+
+Graph destroyed successfully
+
+End: Testing Graph with edges
+------------------------------
+

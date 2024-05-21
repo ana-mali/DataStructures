@@ -1,0 +1,306 @@
+------------------------------
+Start: Testing Heap Node:
+
+Create node 1 with item = 10
+Print node: 10
+
+Create node 2 with item = 20:
+20
+
+Create node 3 with item = 30:
+30
+
+Make node 2 left child of node 1 and node 3 right child of node 1:
+Print left of node 1:
+20
+
+Print right of node 2:
+30
+
+Print parent of node 3:
+10
+
+Copy node 1 to node 4:
+Print node 4:
+10
+
+Print left of node 4:
+20
+
+Destroy four nodes
+Nodes destroyed successfully
+
+End: Testing Heap Node
+------------------------------
+
+------------------------------
+Start: Testing heap basic functions:
+
+Case 1: NULL heap:
+<NULL Heap>
+
+Case 2: Max heap:
+heap type = max, size = 0
+<empty heap>
+is_empty_heap(h)? 1
+h->size = 0
+h->root = <NULL Node>
+peek = Error(peek_heap): heap is empty
+<NULL Data>
+heap successfully destroyed
+
+Case 3: Min heap:
+heap type = min, size = 0
+<empty heap>
+is_empty_heap(h)? 1
+h->size = 0
+h->root = <NULL Node>
+peek = Error(peek_heap): heap is empty
+<NULL Data>
+heap successfully destroyed
+
+Case 4: Treap heap:
+Error(create_heap): invalid type, set to max
+heap type = max, size = 0
+<empty heap>
+heap successfully destroyed
+
+End: Testing heap basic functions
+------------------------------
+
+------------------------------
+Start: Testing find_node_heap:
+
+heap type = max, size = 8
+150 130 140 100 110 70 50 15 
+
+find_node(150): data = 150 , parent = <NULL Node> , left = 130 , right = 140
+
+find_node(130): data = 130 , parent = 150 , left = 100 , right = 110
+
+find_node(140): data = 140 , parent = 150 , left = 70 , right = 50
+
+find_node(100): data = 100 , parent = 130 , left = 15 , right = <NULL Node>
+
+find_node(110): data = 110 , parent = 130 , left = <NULL Node> , right = <NULL Node>
+
+find_node(70): data = 70 , parent = 140 , left = <NULL Node> , right = <NULL Node>
+
+find_node(50): data = 50 , parent = 140 , left = <NULL Node> , right = <NULL Node>
+
+find_node(15): data = 15 , parent = 100 , left = <NULL Node> , right = <NULL Node>
+
+find_node(40): data = <NULL Node>
+
+End: Testing find_node_heap
+------------------------------
+
+------------------------------
+Start: Testing print_heap:
+
+<NULL Heap>
+
+heap type = max, size = 0
+<empty heap>
+
+heap type = max, size = 1
+150 
+
+heap type = max, size = 2
+150 130 
+
+heap type = max, size = 3
+150 130 140 
+
+heap type = max, size = 4
+150 130 140 100 
+
+heap type = max, size = 5
+150 130 140 100 110 
+
+heap type = max, size = 6
+150 130 140 100 110 70 
+
+heap type = max, size = 7
+150 130 140 100 110 70 50 
+
+heap type = max, size = 8
+150 130 140 100 110 70 50 15 
+
+End: Testing print_heap
+------------------------------
+
+------------------------------
+Start: Testing contains_heap:
+
+heap type = max, size = 8
+150 130 140 100 110 70 50 15 
+
+contains_heap(h,150)? = 1
+
+contains_heap(h,130)? = 1
+
+contains_heap(h,140)? = 1
+
+contains_heap(h,100)? = 1
+
+contains_heap(h,110)? = 1
+
+contains_heap(h,70)? = 1
+
+contains_heap(h,50)? = 1
+
+contains_heap(h,15)? = 1
+
+contains_heap(h,40)? = 0
+
+End: Testing contains_heap
+------------------------------
+
+------------------------------
+Start: Testing find_node_level_heap:
+
+heap type = max, size = 8
+150 130 140 100 110 70 50 15 
+
+Level for 150 = 1
+Level for 130 = 2
+Level for 140 = 2
+Level for 100 = 3
+Level for 110 = 3
+Level for 70 = 3
+Level for 50 = 3
+Level for 15 = 4
+Level for 40 = -1
+
+End: Testing find_node_level_heap
+------------------------------
+
+------------------------------
+Start: Testing is_full_heap:
+
+heap type = max, size = 0
+<empty heap>
+is full? = 1
+
+heap type = max, size = 1
+150 
+is full? = 1
+
+heap type = max, size = 2
+150 130 
+is full? = 0
+
+heap type = max, size = 3
+150 130 140 
+is full? = 1
+
+heap type = max, size = 4
+150 130 140 100 
+is full? = 0
+
+heap type = max, size = 5
+150 130 140 100 110 
+is full? = 1
+
+heap type = max, size = 6
+150 130 140 100 110 70 
+is full? = 0
+
+heap type = max, size = 7
+150 130 140 100 110 70 50 
+is full? = 1
+
+heap type = max, size = 8
+150 130 140 100 110 70 50 15 
+is full? = 0
+
+End: Testing is_full_heap
+------------------------------
+
+------------------------------
+Start: Testing max_min:
+
+Testing max-heap:
+heap type = max, size = 0
+<empty heap>
+Error(find_max_heap): empty heap
+<NULL Data>
+Error(find_min_heap): empty heap
+<NULL Data>
+
+heap type = max, size = 1
+150 
+max = 150 , min = 150
+
+heap type = max, size = 2
+150 130 
+max = 150 , min = 130
+
+heap type = max, size = 3
+150 130 140 
+max = 150 , min = 130
+
+heap type = max, size = 4
+150 130 140 100 
+max = 150 , min = 100
+
+heap type = max, size = 5
+150 130 140 100 110 
+max = 150 , min = 100
+
+heap type = max, size = 6
+150 130 140 100 110 70 
+max = 150 , min = 70
+
+heap type = max, size = 7
+150 130 140 100 110 70 50 
+max = 150 , min = 50
+
+heap type = max, size = 8
+150 130 140 100 110 70 50 15 
+max = 150 , min = 15
+
+Testing min-heap:
+heap type = min, size = 0
+<empty heap>
+Error(find_max_heap): empty heap
+<NULL Data>
+Error(find_min_heap): empty heap
+<NULL Data>
+
+heap type = min, size = 1
+5 
+max = 5 , min = 5
+
+heap type = min, size = 2
+5 15 
+max = 15 , min = 5
+
+heap type = min, size = 3
+5 15 20 
+max = 20 , min = 5
+
+heap type = min, size = 4
+5 15 20 50 
+max = 50 , min = 5
+
+heap type = min, size = 5
+5 15 20 50 30 
+max = 50 , min = 5
+
+heap type = min, size = 6
+5 15 20 50 30 40 
+max = 50 , min = 5
+
+heap type = min, size = 7
+5 15 20 50 30 40 60 
+max = 60 , min = 5
+
+heap type = min, size = 8
+5 15 20 50 30 40 60 80 
+max = 80 , min = 5
+
+End: Testing max_min
+------------------------------
+
