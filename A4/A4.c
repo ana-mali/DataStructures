@@ -14,6 +14,16 @@
 # include "A4.h"
 
 //-------------------------Task 1 ----------------------------
+/*
+ * ---------------------------------
+ * Parameters: 
+ * array - integer array 
+ *  size - size of integer array 
+ *  multiplier - integer 
+ *  Return: 
+ *  updated array
+ * ---------------------------------
+ */
 void update_array(int **array, const int size, int multiplier) {
 	int temp, x = 0;
 	int *arr; //[size * multiplier];
