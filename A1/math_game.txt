@@ -1,0 +1,24 @@
+def math_game(lv, lmf, lsf, lrf, rv, rmf, rsf, rrf):
+    print('Starting Math Game:')
+    print('[{},{},{},{}] vs [{},{},{},{}]'.format(lv, lmf, lsf, lrf,rv, rmf, rsf, rrf))
+
+    counter = 0
+    while counter < 5 and lv < rv:
+        print('Round = {}'.format(counter + 1))
+        lcounter = 0
+        while lcounter < lrf:
+            lv = lv*lmf - lsf
+            print('L = {}'.format(lv))
+            lcounter += 1
+        rcounter = 0
+        while rcounter < rrf:
+            rv = rv*rmf - rsf
+            print('R = {}'.format(rv))
+            rcounter += 1
+        counter += 1
+    print('Closing Math Game')
+    if counter == 5:
+        winner = 'R'
+    else:
+        winner = 'L'
+    return winner

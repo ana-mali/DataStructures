@@ -1,0 +1,244 @@
+------------------------------
+Start: Testing compute:
+
+n = 11.4000
+p = 127.2450
+q = 66.7991
+r = 2.2729 + 8.2543 - 165.9917
+r = -155.465
+
+n = 92.3400
+p = 29.0100
+q = 142.8630
+r = -1.0739 + 204.9010 - 169.8907
+r = 33.936
+
+End: Testing compute
+------------------------------
+
+------------------------------
+Start: Testing print_country, print_color and print_size:
+
+Testing print_country:
+print_country(0) = Undefined, success = 0
+print_country(1) = USA, success = 1
+print_country(2) = Canada, success = 1
+print_country(3) = Undefined, success = 0
+
+Testing print_color:
+print_color(0) = Black, success = 1
+print_color(1) = Grey, success = 1
+print_color(2) = Brown, success = 1
+print_color(3) = Purple, success = 1
+print_color(4) = Blue, success = 1
+print_color(5) = Green, success = 1
+print_color(6) = Undefined, success = 0
+
+Testing print_size:
+print_size(0) = Tiny, success = 1
+print_size(1) = Small, success = 1
+print_size(2) = Medium, success = 1
+print_size(3) = Large, success = 1
+print_size(4) = Huge, success = 1
+print_size(5) = Undefined, success = 0
+
+End: Testing print_country, print_color and print_size
+------------------------------
+
+------------------------------
+Start: Testing get_code:
+
+get_code(210653,y) = 2
+get_code(210653,r) = 1
+get_code(210653,s) = 0
+get_code(210653,i) = 653
+get_code(210653,m) = -99
+
+get_code(101349,y) = 1
+get_code(101349,r) = 0
+get_code(101349,s) = 1
+get_code(101349,i) = 349
+get_code(101349,m) = -99
+
+get_code(13577,y) = -99
+get_code(13577,r) = -99
+get_code(13577,s) = -99
+get_code(13577,i) = -99
+get_code(13577,m) = -99
+
+get_code(6248910,y) = -99
+get_code(6248910,r) = -99
+get_code(6248910,s) = -99
+get_code(6248910,i) = -99
+get_code(6248910,m) = -99
+
+End: Testing get_code
+------------------------------
+
+------------------------------
+Start: Testing print_description:
+
+Serial number = 210653
+country = Canada
+color = Grey
+size = Tiny
+item = 653
+A Beautiful Tiny Grey Box item# 653 made in Canada
+
+Serial number = 141349
+country = USA
+color = Blue
+size = Small
+item = 349
+A Beautiful Small Blue Box item# 349 made in USA
+
+Serial number = 322459
+country = Undefined
+color = Brown
+size = Medium
+item = 459
+A Beautiful Medium Brown Box item# 459
+
+Serial number = 237903
+country = Canada
+color = Purple
+size = Undefined
+item = 903
+A Beautiful Purple Box item# 903 made in Canada
+
+Serial number = 188140
+country = USA
+color = Undefined
+size = Undefined
+item = 140
+A Beautiful Box item# 140 made in USA
+
+Serial number = 398225
+country = Undefined
+color = Undefined
+size = Undefined
+item = 225
+A Beautiful Box item# 225
+
+Serial number = 283767
+country = Canada
+color = Undefined
+size = Large
+item = 767
+A Beautiful Large Box item# 767 made in Canada
+
+Serial number = 494660
+country = Undefined
+color = Undefined
+size = Huge
+item = 660
+A Beautiful Huge Box item# 660
+
+Serial number = 556103
+country = Undefined
+color = Green
+size = Undefined
+item = 103
+A Beautiful Green Box item# 103
+
+Serial number = 13577
+country = Undefined
+color = Undefined
+size = Undefined
+item = -99
+Description not found
+
+End: Testing print_description
+------------------------------
+
+------------------------------
+Start: Testing math_game:
+
+Starting Math Game:
+[10,-1,30,4] vs [20,2,40,3]
+Round = 1
+L = -40
+L = 10
+L = -40
+L = 10
+R = 0
+R = -40
+R = -120
+Closing Math Game
+Winner is: L
+
+Starting Math Game:
+[10,2,-30,2] vs [18,5,50,3]
+Round = 1
+L = 50
+L = 130
+R = 40
+R = 150
+R = 700
+Round = 2
+L = 290
+L = 610
+R = 3450
+R = 17200
+R = 85950
+Round = 3
+L = 1250
+L = 2530
+R = 429700
+R = 2148450
+R = 10742200
+Round = 4
+L = 5090
+L = 10210
+R = 53710950
+R = 268554700
+R = 1342773450
+Round = 5
+L = 20450
+L = 40930
+R = -1876067392
+R = -790402418
+R = 342955156
+Closing Math Game
+Winner is: R
+
+Starting Math Game:
+[10,2,-30,2] vs [1800,1,-100,5]
+Round = 1
+L = 50
+L = 130
+R = 1900
+R = 2000
+R = 2100
+R = 2200
+R = 2300
+Round = 2
+L = 290
+L = 610
+R = 2400
+R = 2500
+R = 2600
+R = 2700
+R = 2800
+Round = 3
+L = 1250
+L = 2530
+R = 2900
+R = 3000
+R = 3100
+R = 3200
+R = 3300
+Round = 4
+L = 5090
+L = 10210
+R = 3400
+R = 3500
+R = 3600
+R = 3700
+R = 3800
+Closing Math Game
+Winner is: L
+
+End: Testing math_game
+------------------------------
+
